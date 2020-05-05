@@ -1,0 +1,58 @@
+@media only screen and (max-width: 768px) {
+  body {
+
+    .sign-up {
+      .tab-content {
+        width: 500px;
+
+        #translator-info {
+          .some-text {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 565px) {
+  body {
+
+    .sign-up {
+      .tab-content {
+        width: 400px;
+
+        #translator-info {
+          .some-text {
+            width: 400px;
+          }
+        }
+        #translatorTabContent {
+          padding: 30px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+
+    .sign-up {
+      .tab-content {
+        width: 320px;
+
+        #translator-info {
+          .some-text {
+            width: 280px;
+            font-size: 14px;
+          }
+        }
+        #translatorTabContent {
+          padding: 30px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

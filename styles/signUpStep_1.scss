@@ -1,0 +1,219 @@
+@import "fonts";
+@import "base";
+
+.sign-up {
+  margin-bottom: 140px;
+  .native-tabs {
+    margin-top: 30px;
+    background-color: #F3F6FB;
+    border-bottom: none;
+    min-height: 56px;
+
+    .nav-item {
+      height: 56px;
+      .nav-link {
+        border: none;
+        background: none;
+        position: relative;
+        padding: 14px 2px;
+        //width: 80px;
+
+        font-family: Metropolis, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+
+        color: $gray-little-1;
+
+        margin: 8px 32px;
+
+        &:active, &:hover {
+          color: $gray-1;
+        }
+
+        &:before {
+          font-family: Metropolis, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          align-items: center;
+          text-align: center;
+          vertical-align: middle;
+
+          background: $gray-3;
+          color: #fff;
+          border-radius: 50%;
+          margin-right: 8px;
+
+        }
+      }
+
+      #translator-info-tab {
+        &:before {
+          content: '1';
+        }
+      }
+
+      #confirm-info-tab {
+        &:before {
+          content: '2';
+        }
+      }
+
+      #complete-tab {
+        &:before {
+          content: '3';
+        }
+      }
+
+      .nav-link.active {
+        border-bottom: 2px solid $base-orange;
+        color: $gray-1;
+
+        &:before {
+          background: $gray-1;
+        }
+      }
+    }
+  }
+
+  .form-box {
+    background: #FFF;
+    border: 1px solid $gray-little-3;
+    box-sizing: border-box;
+    box-shadow: 0 12px 48px rgba(118, 116, 125, 0.08);
+    border-radius: 4px;
+    padding: 50px 70px;
+
+  }
+
+  .basic-form {
+    .custom-radios {
+      width: 100%;
+      display: flex;
+
+      label {
+        display: inline-block;
+        width: 100%;
+        transition: all 0.3s;
+        text-align: center;
+        font-family: Metropolis, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #76747D;
+        background: $gray-4;
+        border: solid 1px $gray-4;
+        padding: 14px 16px;
+
+        &:nth-child(2) {
+          border-radius: 4px 0 0 4px;
+        }
+
+        &:nth-child(4) {
+          border-radius: 0 4px 4px 0;
+
+        }
+
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      input[type="radio"]:checked + label {
+        border: solid 1px $base-orange;
+        background: $base-orange;
+        color: #FFF;
+      }
+    }
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 16px;
+      height: 48px;
+      background: #FFFFFF;
+      border: 1px solid #D6D5D7;
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin: 0 2px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+
+      label {
+        margin-bottom: 2px;
+        font-size: 14px;
+        color: #3F3B48;
+      }
+
+      .form-check {
+        #check {
+          width: 20px;
+          height: 20px;
+          background-color: red;
+          border: 1px solid #D6D5D7;
+          box-sizing: border-box;
+          border-radius: 4px;
+          align-self: flex-start;
+        }
+
+        .form-check-label {
+          margin-left: 8px;
+          font-family: Metropolis, sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #3F3B48;
+          order: 1;
+          align-self: center;
+        }
+      }
+
+      .error {
+        font-family: Metropolis, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 140%;
+
+        color: #97959D;
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+  .title {
+    font-family: Metropolis, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: $gray-1;
+    text-align: start;
+    margin: 60px 0 0 0;
+  }
+
+  .some-text {
+    width: 584px;
+    height: 50px;
+    margin: 16px 0 40px;
+    padding: 0;
+    font-family: Metropolis, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: $gray-2;
+  }
+}
+
+@import "medias";
