@@ -287,7 +287,7 @@ body {
     width: 500px;
   }
 }
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 575px) {
   body .container .some-text, body .container .title {
     padding: 0 20px;
   }
@@ -316,4 +316,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=signUpStep_1.css.map */
+/*# sourceMappingURL=style.css.map */
