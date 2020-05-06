@@ -273,8 +273,6 @@ body {
   margin: 60px 0 0 0;
 }
 .sign-up .some-text {
-  width: 584px;
-  height: 50px;
   margin: 16px 0 40px;
   padding: 0;
   font-family: Metropolis, sans-serif;
@@ -285,14 +283,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  body .sign-up .tab-content {
-    width: 500px;
-  }
-  body .sign-up .tab-content #translator-info .some-text {
+  body .sign-up #translator-info .some-text {
     width: 500px;
   }
 }
 @media only screen and (max-width: 565px) {
+  body .container .some-text, body .container .title {
+    padding: 0 20px;
+  }
   body .sign-up .tab-content {
     width: 400px;
   }
