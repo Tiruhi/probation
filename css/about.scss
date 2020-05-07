@@ -64,22 +64,44 @@ body {
       margin: 0 auto;
     }
   }
+
   .features-block-content {
     .features-item {
       padding-top: 60px;
+      padding-right: 40px;
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       .features-item-img {
-
       }
 
       .features-item-title {
-
+        padding-top: 24px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #241F2D;
       }
 
       .features-item-text {
+        padding-top: 16px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 156%;
 
+        color: #3F3B48;
       }
     }
 
   }
+}
+
+.goals-content {
+  padding: 150px 110px 140px;
+  .goals-block {
+    padding: 120px 0 122px;
+  }
+
 }
