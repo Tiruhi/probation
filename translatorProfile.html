@@ -11,7 +11,7 @@
 
 
     <!--start bootstrap-->
-    <link crossorigin="anonymous" href="styles/bootstrap.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="css/bootstrap.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet"
@@ -22,7 +22,7 @@
     <!-- select 2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
     <!-- select 2 -->
-    <link rel="stylesheet" type="text/css" href="styles/translatorProfile.css">
+    <link rel="stylesheet" type="text/css" href="css/translatorProfile.css">
     <title>Translate.io</title>
 </head>
 
@@ -32,7 +32,7 @@
     <div class="header">
         <div class="row">
             <div class="col-2">
-                <img class="logo" src="images/logo.png" alt="Talk Native">
+                <img class="logo" src="img/logo.png" alt="Talk Native">
             </div>
             <div class="col-8">
                 <div class="row no-gutters">
@@ -64,12 +64,12 @@
             </div>
             <div class="ml-auto">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <button type="button" class="btn message-isset"><img src="images/messages.svg" alt="messages"></button>
-                    <button type="button" class="btn"><img src="images/bell.svg" alt="notifications"></button>
+                    <button type="button" class="btn message-isset"><img src="img/messages.svg" alt="messages"></button>
+                    <button type="button" class="btn"><img src="img/bell.svg" alt="notifications"></button>
                     <div class="btn-group" role="group">
                         <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                            <img src="images/Single.png" alt="avatar">
+                            <img src="img/Single.png" alt="avatar">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                             <a class="dropdown-item" href="#">Dropdown link</a>
@@ -85,7 +85,7 @@
 
 <section class="container-fluid content">
     <div class="row">
-        <div class="col-3">
+        <div class="col-lg-4 col-md-3">
             <ul class="left-list">
                 <li class="item active" ><a href="#">My Profile</a></li>
                 <li class="item"><a href="#">Membership</a></li>
@@ -323,7 +323,7 @@
                                             <td>
                                                 <div class="languages-delete">
                                                     <button type="button" class="btn">
-                                                        <img src="images/delete.svg" alt="delete">
+                                                        <img src="img/delete.svg" alt="delete">
                                                     </button>
                                                 </div>
                                             </td>
@@ -362,7 +362,7 @@
                                             <td>
                                                 <div class="languages-delete">
                                                     <button type="button" class="btn">
-                                                        <img src="images/delete.svg" alt="delete">
+                                                        <img src="img/delete.svg" alt="delete">
                                                     </button>
                                                 </div>
                                             </td>
@@ -371,7 +371,7 @@
                                         </tbody>
                                     </table>
                                     <a href="javascript:void(0);" class="add-language-pair">
-                                        <img src="images/plus.svg" alt="">Add language pair
+                                        <img src="img/plus.svg" alt="">Add language pair
                                     </a>
                                 </div>
                             </div>
@@ -388,7 +388,7 @@
                                         </p>
                                     </div>
                                     <div id="drop-area" class="upload-btn-wrapper col-12 profile-rows">
-                                        <button type="button" class="btn"><img src="images/upload.svg" alt=""></button>
+                                        <button type="button" class="btn"><img src="img/upload.svg" alt=""></button>
                                         <input type="file" id="files" name="files" class="inputfile" multiple
                                                onchange="handleFiles(this.files)"/>
                                         <label for="files" class="upload-label">Drag your files here or click to
@@ -397,15 +397,15 @@
                                     <div class="col-12 images-preview-block">
                                         <div id="gallery" class="row no-gutters d-flex justify-content-lg-start">
                                             <div class="preview-block-item">
-                                                <img src="images/Thumbnail.png" alt="Thumbnail">
+                                                <img src="img/Thumbnail.png" alt="Thumbnail">
                                                 <button type="button" class="btn preview-block-item-delete">
-                                                    <img src="images/delete.svg" alt="delete">
+                                                    <img src="img/delete.svg" alt="delete">
                                                 </button>
                                             </div>
                                             <div class="preview-block-item">
-                                                <img src="images/Thumbnail-2.png" alt="Thumbnail">
+                                                <img src="img/Thumbnail-2.png" alt="Thumbnail">
                                                 <button type="button" class="btn preview-block-item-delete">
-                                                    <img src="images/delete.svg" alt="delete">
+                                                    <img src="img/delete.svg" alt="delete">
                                                 </button>
                                             </div>
                                         </div>
@@ -426,11 +426,11 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="row no-gutters experience-row">
-                                            <div class="col-md-2 exp-section">
+                                            <div class="col-lg-3 col-md-2 exp-section">
                                                 <label for="years">Years of experience:</label>
                                                 <input type="number" class="form-control" id="years">
                                             </div>
-                                            <div class="col-md-8 ml-80 exp-section">
+                                            <div class="col-lg-7 col-md-8 ml-80 exp-section">
                                                 <label>Experience in different sectors:</label>
                                                 <div class="switch-group d-flex ">
                                                     <div class="switch-item">
@@ -476,7 +476,7 @@
                                     <div class="col-12">
                                         <div class="row no-gutters linkedin">
                                             <label for="linkedin-url">Linkedin:</label>
-                                            <input type="text" class="form-control linkedin-url" id="linkedin-url"
+                                            <input type="url" class="form-control linkedin-url" id="linkedin-url"
                                                    placeholder="https://">
                                         </div>
                                     </div>
@@ -512,7 +512,7 @@
                                     <div class="col-12">
                                         <div class="row no-gutters attach-file-block">
                                             <label for="upload">
-                                                <img src="images/skrep.svg" alt="attach-file">
+                                                <img src="img/skrep.svg" alt="attach-file">
                                                 <input type="file" id="upload" style="display:none">
                                                 Attach file
                                             </label>
@@ -523,12 +523,12 @@
                                             <ul class="list-group">
                                                 <li>screenshot_12-05-2020-15-44.png
                                                     <button type="button" class="btn preview-block-item-delete">
-                                                        <img src="images/delete.svg" alt="delete">
+                                                        <img src="img/delete.svg" alt="delete">
                                                     </button>
                                                 </li>
                                                 <li>filename.jpg
                                                     <button type="button" class="btn preview-block-item-delete">
-                                                        <img src="images/delete.svg" alt="delete">
+                                                        <img src="img/delete.svg" alt="delete">
                                                     </button>
                                                 </li>
                                             </ul>
@@ -557,7 +557,7 @@
                                     <div class="col-12">
                                         <div class="row no-gutters attach-file-block">
                                             <label for="upload-resume">
-                                                <img src="images/upload-small.svg" alt="upload-resume">
+                                                <img src="img/upload-small.svg" alt="upload-resume">
                                                 <input type="file" id="upload-resume" style="display:none">
                                                 Upload resume
                                             </label>
@@ -691,7 +691,7 @@
             let itemContent = `<div class="preview-block-item">
                                    <img src="${reader.result}" alt="Thumbnail">
                                    <button type="button" class="btn preview-block-item-delete">
-                                       <img src="images/delete.svg" alt="delete">
+                                       <img src="img/delete.svg" alt="delete">
                                    </button>
                                </div>`;
             let gallery = document.getElementById('gallery');
