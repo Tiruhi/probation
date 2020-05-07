@@ -1,0 +1,54 @@
+body {
+  font-family: Metropolis, sans-serif;
+}
+
+.about-content {
+  padding: 140px 110px;
+  background-color: #FFFFFF;
+}
+.about-content .info-block .info-block-title {
+  font-weight: bold;
+  font-size: 42px;
+  color: #241F2D;
+}
+.about-content .info-block .info-block-content {
+  padding: 40px 0;
+}
+.about-content .info-block .info-block-content p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #3F3B48;
+}
+.about-content .info-block .info-block-links .info-block-link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #F54838;
+  margin: 4px 0;
+  padding-right: 45px;
+}
+.about-content .info-block .info-block-links .info-block-link:after {
+  content: url(../img/arrow-t.png);
+  color: #F54838;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+.about-content .info-block-right-img img {
+  width: 100%;
+}
+
+.about-content-features {
+  background: linear-gradient(180deg, #F3F6FB 0%, #FFFFFF 100%);
+  padding: 140px 110px 220px;
+}
+.about-content-features .features-block .features-block-title {
+  font-weight: bold;
+  font-size: 42px;
+  color: #241F2D;
+  text-align: center;
+  margin: 0 auto;
+}
+.about-content-features .features-block-content .features-item {
+  padding-top: 60px;
+}
+
+/*# sourceMappingURL=about.css.map */
