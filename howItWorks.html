@@ -101,7 +101,7 @@
             </div>
 
         </div>
-        <div id="translator" class="row no-gutters d-flex justify-content-around tab-body">
+        <div id="translator" class="row no-gutters d-none justify-content-around tab-body">
             translator
         </div>
     </div>
@@ -209,7 +209,7 @@
             }
             let tab_body = $(this).data('tab');
             $('.tab-content > div').attr('style','display:none !important');
-            $('.tab-content > #'+tab_body).show();
+            $('.tab-content > #'+tab_body).attr('style','display:flex !important');;
         })
     })
 </script>
