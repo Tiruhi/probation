@@ -621,7 +621,6 @@
 
 <!--end footer-->
 
-
 <!--start scripts-->
 
 <script src="js/jquery-3.4.1.slim.min.js"></script>
@@ -632,68 +631,7 @@
 <!-- select 2 -->
 <script src="js/select2.min.js"></script>
 <!-- select 2 -->
-<script>
-    let dropArea = document.getElementById('drop-area');
-    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-        dropArea.addEventListener(eventName, preventDefaults, false)
-    })
 
-    function preventDefaults(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-
-    dropArea.addEventListener('drop', handleDrop, false)
-
-    function handleDrop(e) {
-        let dt = e.dataTransfer
-        let files = dt.files
-
-        handleFiles(files)
-    }
-
-    function handleFiles(files) {
-        let f = [...files];
-        f.forEach(uploadFile);
-        f.forEach(previewFile);
-    }
-
-    function uploadFile(file) {
-        let url = 'https://backend.com'
-        let formData = new FormData()
-
-        formData.append('file', file)
-        fetch(url, {
-            method: 'POST',
-            body: formData
-        }).then(() => { /* Done. Inform the user */
-        }).catch(() => { /* Error. Inform the user */
-        })
-    }
-
-    function previewFile(file) {
-        let reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onloadend = function () {
-            let itemContent = `<div class="preview-block-item">
-                                   <img src="${reader.result}" alt="Thumbnail">
-                                   <button type="button" class="btn preview-block-item-delete">
-                                       <img src="img/delete.svg" alt="delete">
-                                   </button>
-                               </div>`;
-            let gallery = document.getElementById('gallery');
-            gallery.insertAdjacentHTML('beforeend', itemContent)
-        }
-    }
-
-
-    $(".clients-tags").select2({
-        tags: true,
-        tokenSeparators: [',', ' ']
-    });
-
-
-</script>
 
 <!--end scripts-->
 
