@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--start bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--    file icon-->
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
 
     <!--end bootstrap-->
 
     <!-- select 2 -->
-    <link href="css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
 
     <!-- select 2 -->
     <link rel="stylesheet" type="text/css" href="css/translatorProfile.css">
@@ -21,7 +21,7 @@
 
 <body>
 <!--start header-->
-<header class="container-fluid container-t no-gutters p-0">
+<header class="container-fluid no-gutters p-0">
     <div class="header-t">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a href="/" class="navbar-brand logo">
@@ -83,8 +83,8 @@
 
 <!--start myProfile-->
 <div class="bg-color-t">
-<section class="container-fluid container-t content">
-    <div class="row no-gutters d-flex justify-content-around">
+    <section class="container-fluid container-t content">
+    <div class="row no-gutters d-flex justify-content-center">
         <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
             <ul class="left-list">
                 <li class="item active"><a href="#">My Profile</a></li>
@@ -390,7 +390,7 @@
                                     <div id="drop-area" class="upload-btn-wrapper col-12 profile-rows">
                                         <button type="button" class="btn"><img src="img/upload.svg" alt=""></button>
                                         <input type="file" id="files" name="files" class="inputfile" multiple
-                                               onchange="handleFiles(this.files)"/>
+                                               onchange="handleFiles(this.files)" />
                                         <label for="files" class="upload-label">Drag your files here or click to
                                             upload</label>
                                     </div>
@@ -557,7 +557,7 @@
                                         <div class="row no-gutters attach-file-block">
                                             <label for="upload-resume">
                                                 <img src="img/upload-small.svg" alt="upload-resume">
-                                                <input type="file" id="upload-resume" style="display:none">
+                                                <input type="file" accept=".doc, .docx, .pdf" id="upload-resume" style="display:none">
                                                 Upload resume
                                             </label>
 

@@ -42,7 +42,7 @@ section.container {
 
 .about-content-features {
   background: linear-gradient(180deg, #F3F6FB 0%, #FFFFFF 100%);
-  padding: 140px 66px; }
+  padding: 140px 66px 70px; }
   .about-content-features .features-block .features-block-title {
     font-weight: bold;
     font-size: 42px;
@@ -76,7 +76,7 @@ section.container {
       color: #3F3B48; }
 
 .goals-content {
-  padding: 150px 0 140px; }
+  padding: 70px 0 140px; }
   .goals-content .goals-bg {
     background: #EAEEF5;
     border-radius: 4px; }
@@ -139,6 +139,10 @@ section.container {
           background-color: #f32916; }
 
 /* Responsive */
+@media only screen and (max-width: 1300px) {
+  .section.about-end, .section.goals-content {
+    padding-left: 60px;
+    padding-right: 60px; } }
 @media (max-width: 1200px) {
   .section {
     padding-right: 60px;
@@ -178,10 +182,16 @@ section.container {
     display: flex; }
   .about-end .about-end-bg .about-end-text {
     padding: 60px 40px 0px; } }
+@media only screen and (max-width: 480px) {
+  .goals-content .goals-block {
+    padding: 60px 20px; } }
 @media only screen and (max-width: 420px) {
   .section {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  .about-end .about-end-bg .about-end-text {
+    padding: 60px 20px 0; } }
 
 /*# sourceMappingURL=about.css.map */

@@ -117,6 +117,9 @@ section.container {
         width: 325px;
         height: 87px; }
 
+.bg-color-t {
+  background: #F3F6FB; }
+
 .how-it-works-bottom {
   background: #F3F6FB; }
   .how-it-works-bottom .why-choose-block {
@@ -177,6 +180,10 @@ section.container {
           background-color: #f32916; }
 
 /* Responsive */
+@media only screen and (max-width: 1260px) {
+  .how-it-works-bottom {
+    padding-left: 60px;
+    padding-right: 60px; } }
 @media only screen and (max-width: 1100px) {
   .how-it-works-top .tab-body .bg-2 {
     background-image: url("../img/2.svg");
@@ -239,7 +246,7 @@ section.container {
       left: 0px; }
 
   .how-it-works-bottom .how-it-end-bg .about-end-button {
-    padding: 60px;
+    padding: 60px 10px;
     display: flex; }
     .how-it-works-bottom .how-it-end-bg .about-end-button .get-started {
       align-self: center; }
@@ -264,6 +271,9 @@ section.container {
 @media only screen and (max-width: 420px) {
   .section {
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+
+  .how-it-works-bottom .how-it-end-bg .about-end-text {
+    padding: 60px 20px 0; } }
 
 /*# sourceMappingURL=howItWorks.css.map */

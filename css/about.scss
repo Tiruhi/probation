@@ -78,7 +78,7 @@ section {
 
 .about-content-features {
   background: linear-gradient(180deg, #F3F6FB 0%, #FFFFFF 100%);
-  padding: 140px 66px;
+  padding: 140px 66px 70px;
 
   .features-block {
     .features-block-title {
@@ -131,7 +131,7 @@ section {
 }
 
 .goals-content {
-  padding: 150px 0 140px;
+  padding: 70px 0 140px;
 
   .goals-bg {
     background: #EAEEF5;
@@ -231,6 +231,14 @@ section {
 
 
 /* Responsive */
+@media only screen and (max-width: 1300px) {
+  .section {
+    &.about-end, &.goals-content {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
 
 @media (max-width: 1200px) {
   //.container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -314,12 +322,29 @@ section {
       }
     }
   }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .goals-content {
+    .goals-block {
+      padding: 60px 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 420px) {
   .section {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-right: 20px;
     padding-left: 20px;
   }
+  .about-end {
+    .about-end-bg {
+      .about-end-text {
+        padding: 60px 20px 0;
+      }
+    }
+  }
+
 }
